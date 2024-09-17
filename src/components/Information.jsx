@@ -85,8 +85,8 @@ export default function Information(props) {
             </div>
             <div className='my-8 flex flex-col-reverse max-w-prose w-full mx-auto gap-4'>
                 {(!finished || translating) && (
-                    <div className='grid place-items-center'>
-                        <i className="fa-solid fa-spinner animate-spin"></i>
+                    <div className='grid place-items-center -mt-4'>
+                        <i className="fa-solid fa-spinner animate-spin text-blue-400 text-lg"></i><p className='text-md text-blue-500'>Stay here it works!</p> 
                     </div>
                 )}
                 {tab === 'transcription' ? (
