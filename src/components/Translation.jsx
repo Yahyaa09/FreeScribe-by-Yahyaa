@@ -15,7 +15,7 @@ export default function Translation(props) {
                         <option value={'Select language'}>Select language</option>
                         {Object.entries(LANGUAGES).map(([key, value]) => {
                             return (
-                                <option key={key} value={value}>{key}</option>
+                                <option key={key} value={value}>{value}</option>
                             )
                         })}
 
