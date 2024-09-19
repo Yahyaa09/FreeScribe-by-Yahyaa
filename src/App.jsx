@@ -78,6 +78,8 @@ function App() {
     })
   }
 
+  const [ddu,Setddu] = useState(0);
+
   return (
     <div className='flex flex-col max-w-[1000px] mx-auto w-full'>
       <section className='min-h-screen flex flex-col'>
@@ -87,9 +89,9 @@ function App() {
         ) : loading ? (
           <Transcribing />
         ) : isAudioAvailable ? (
-          <FileDisplay handleFormSubmission={handleFormSubmission} handleAudioReset={handleAudioReset} file={file} audioStream={audioStream} />
+          <FileDisplay handleFormSubmission={handleFormSubmission} handleAudioReset={handleAudioReset} file={file} audioStream={audioStream} ddu={ddu} Setddu={Setddu}/>
         ) : (
-          <HomePage setFile={setFile} setAudioStream={setAudioStream} />
+          <HomePage setFile={setFile} setAudioStream={setAudioStream} ddu={ddu} Setddu={Setddu} />
         )}
       </section>
       <footer></footer>
